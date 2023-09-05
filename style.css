@@ -1,7 +1,9 @@
 :root {
   --cream: hsl(30, 38%, 92%);
-  --dark-cyn: hsl(158, 36%, 37%);
+  --dark-cyan: hsl(158, 36%, 37%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
+  --darker-cyan: hsl(158, 36%, 30%);
+  --darkest-cyan: hsl(158, 36%, 25%);
   --ff-card-body: "Montserrat", sans-serif;
   --ff-card-title: "Fraunces", serif;
   --ff-price-sale: "Fraunces", serif;
@@ -64,7 +66,7 @@ body {
   line-height: 1.2;
 }
 .card__price-current {
-  color: var(--dark-cyn);
+  color: var(--dark-cyan);
   font-family: var(--ff-price-sale);
   font-size: var(--fs-price-sale);
 }
@@ -79,13 +81,20 @@ body {
   vertical-align: text-bottom;
 }
 .card__button {
-  background-color: var(--dark-cyn);
+  background-color: var(--dark-cyan);
   border: none;
   border-radius: 0.75rem;
   color: var(--white);
+  cursor: pointer;
   font-weight: var(--fw-bold);
   padding: 0.75rem;
   width: 100%;
+}
+.card__button:hover {
+  background-color: var(--darker-cyan);
+}
+.card__button:focus {
+  background-color: var(--darkest-cyan);
 }
 .footer {
   font-size: 11px;
@@ -104,9 +113,9 @@ body {
     flex-basis: 50%;
   }
   .card__image {
+    border-bottom-left-radius: 0.75rem;
     border-radius: 0;
     border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
   }
   .card__body {
     flex-basis: 52%;
