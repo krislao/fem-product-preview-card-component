@@ -113,9 +113,9 @@ body {
     flex-basis: 50%;
   }
   .card__image {
-    border-bottom-left-radius: 0.75rem;
     border-radius: 0;
     border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
   }
   .card__body {
     flex-basis: 52%;
