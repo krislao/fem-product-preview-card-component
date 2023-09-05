@@ -1,8 +1,97 @@
-/* TODO: setup css variables */
-.attribution {
+:root {
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyn: hsl(158, 36%, 37%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --ff-card-body: "Montserrat", sans-serif;
+  --ff-card-title: "Fraunces", serif;
+  --ff-price-sale: "Fraunces", serif;
+  --fs-card-body: 0.875rem;
+  --fs-card-title: 2rem;
+  --fs-price-sale: 1.875rem;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  margin: 0 auto;
+  max-width: 21.25rem;
+  width: 100%;
+}
+.card__image {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.card__body {
+  color: var(--dark-grayish-blue);
+  font-family: var(--ff-card-body);
+  font-size: var(--fs-card-body);
+  font-weight: var(--fw-medium);
+  padding: 1.5rem;
+}
+.card__category {
+  letter-spacing: 0.25rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.card__title {
+  color: var(--very-dark-blue);
+  font-family: var(--ff-card-title);
+  font-size: var(--fs-card-title);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  margin: 0.75rem 0;
+}
+.card__description,
+.card__prices {
+  margin: 1rem 0;
+}
+.card__prices {
+  align-items: center;
+  display: flex;
+  line-height: 1.2;
+}
+.card__price-current {
+  color: var(--dark-cyn);
+  font-family: var(--ff-price-sale);
+  font-size: var(--fs-price-sale);
+}
+.card__price-previous {
+  margin-left: 1.5rem;
+  text-decoration: line-through;
+}
+.card__button-icon {
+  display: inline-block;
+  position: relative;
+  right: 0.5rem;
+  vertical-align: text-bottom;
+}
+.card__button {
+  background-color: var(--dark-cyn);
+  border: none;
+  border-radius: 0.75rem;
+  color: var(--white);
+  font-weight: var(--fw-bold);
+  padding: 0.75rem;
+  width: 100%;
+}
+.footer {
   font-size: 11px;
+  padding: 0.5rem;
   text-align: center;
 }
-.attribution a {
+.footer__link {
   color: hsl(228, 45%, 44%);
 }
